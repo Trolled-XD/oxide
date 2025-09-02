@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rust Shop</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #121212;
+      color: white;
+      padding: 20px;
+    }
+    .item {
+      background: #1e1e1e;
+      padding: 15px;
+      margin: 10px 0;
+      border-radius: 5px;
+    }
+    button {
+      padding: 10px 20px;
+      background: #00cc66;
+      border: none;
+      color: white;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <h1>Rust Server Shop</h1>
+  <div class="item">
+    <h2>VIP Kit - $5</h2>
+    <p>Includes weapons, armor, and more!</p>
+    <button onclick="buy('VIP Kit')">Buy</button>
+  </div>
+  <div class="item">
+    <h2>Supply Drop - $2</h2>
+    <p>Instant supply drop in-game.</p>
+    <button onclick="buy('Supply Drop')">Buy</button>
+  </div>
+
+  <script>
+    function buy(item) {
+      alert("This would trigger the payment flow for: " + item);
+      // Later: Send request to backend
+    }
+  </script>
+</body>
+</html>
